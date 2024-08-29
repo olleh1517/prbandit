@@ -1,0 +1,49 @@
+>>>>0.ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+>>>>1. ls(파일을 확인), cat 파일명 - 파일읽는다.
+ls -a 옵션
+숨겨진 파일이나 디렉토리를 보여준다.
+ls -l 옵션
+자세한 내용을 출력한다.
+ls -s 옵션
+파일 크기 순으로 정렬하여 출력한다.
+ls -r 옵션
+거꾸로 출력한다. (기본 명령은 알파벳 순서이다.)
+ls -R 옵션
+하위 디렉토리까지 출력한다.
+ls -h 옵션
+K, M, G 단위를 사용하여 파일 크기를 사람이 보기 좋게 표시한다.
+ls -d 옵션
+지정된 디렉토리의 정보 출력
+ls -F 옵션
+파일 형식을 알리는 문자를 각 파일 뒤에 추가
+cat 뒤에 여러 파일이름을 넣어도 다같이 출력가능하다.
+
+>>>>2. cat
+cat ./fiel_name ./ == 현재 디렉터리
+cat <file_name
+
+>>>>3. 파일 공백처리
+file hello라는 이름은
+cat file\ hello로 처리
+
+>>>>4. 파일 색상
+blue 파일을 포함한 폴더
+cyan 참조링크
+yello /dev 파일이나
+red tar,gzip,zip등으로 압축된 파일명
+magenta jpg,png,gif, 그래픽파일
+깜빡이는 글자 보안위험
+gray 기타파일
+
+ctrl -a 숨은 파일을 찾는다.
+
+파일 색상을 임의로 바꾸기
+echo $LS_COLORS 색상확인
+출력값 LS_COLORS="di=34:...."
+export LS_COLORS
+
+source ~/.bashrc 색상설정적용
+
+
+
